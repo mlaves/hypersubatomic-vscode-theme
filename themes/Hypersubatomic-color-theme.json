@@ -6,7 +6,6 @@
 //	Magenta:	#d72e82
 //	Violet:		#875afb
 //	Orange:		#ff7a00
-
 {
 	"tokenColors": [
 		{
@@ -47,6 +46,15 @@
 			],
 			"settings": {
 				"foreground": "#f2283c"
+			}
+		},
+		{
+			"name": "Variable Parameter",
+			"scope": [
+				"variable.parameter"
+			],
+			"settings": {
+				"foreground": "#ff7a00"
 			}
 		},
 		{
@@ -217,7 +225,7 @@
 		},
 		{
 			"name": "Markup Raw Other",
-			"scope":  [
+			"scope": [
 				"markup.raw",
 				"markup.inline.raw",
 				"markup.raw.inline",
@@ -248,14 +256,22 @@
 				"foreground": "#ffc200"
 			}
 		},
-		
+		{
+			"name": "JSON Key",
+			"scope": [
+				"support.type.property-name.json",
+				"meta.structure.dictionary.key.json",
+				"meta.structure.dictionary.json meta.structure.dictionary.key.json string.quoted.double.json"
+			],
+			"settings": {
+				"foreground": "#ff7a00"
+			}
+		},
 		{
 			"name": "String",
 			"scope": [
 				"string",
-				"string",
-				"meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
-				"source.c++ meta.function.c meta.block.c string.quoted.double.c constant.other.placeholder.c"
+				"meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json"
 			],
 			"settings": {
 				"foreground": "#f2283c"
@@ -268,7 +284,6 @@
 				"foreground": "#d72e82"
 			}
 		},
-		
 		{
 			"name": "Raw String Delimiters",
 			"scope": [
@@ -294,13 +309,20 @@
 				"foreground": "#ffc200"
 			}
 		},
-		
-		
 		{
 			"name": "Storage Type",
 			"scope": "storage.type",
 			"settings": {
 				"foreground": "#0093FF"
+			}
+		},
+		{
+			"name": "Python Types",
+			"scope": [
+				"support.type.python",
+			],
+			"settings": {
+				"foreground": "#00ae6b"
 			}
 		},
 		{
@@ -599,7 +621,7 @@
 		"tab.activeModifiedBorder": "#4B526D",
 		"tab.unfocusedActiveBorder": "#464B5D",
 		"tab.activeForeground": "#FFFFFF",
-		"tab.activeBackground" : "#272937",
+		"tab.activeBackground": "#272937",
 		"tab.inactiveForeground": "#8F93A2",
 		"tab.inactiveBackground": "#0F111A",
 		"tab.unfocusedActiveForeground": "#8F93A2",
